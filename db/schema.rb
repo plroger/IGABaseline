@@ -11,7 +11,20 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20170327054244) do
-
+  
+  create_table "baseline_iga_ibms", force: :cascade do |t|
+    t.string   "server_name"
+    t.string   "ip"
+    t.string   "os"
+    t.string   "version_os"
+    t.string   "qmgr"
+    t.string   "version_mq"
+    t.string   "broker"
+    t.string   "version_broker"
+    t.text     "comment"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
   create_table "iga_baselines", force: :cascade do |t|
     t.string   "server_name"
     t.string   "ip"
