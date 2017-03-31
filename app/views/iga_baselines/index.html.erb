@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Iga Baselines</h1>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Server name</th>
+      <th>Ip</th>
+      <th>Os</th>
+      <th>Version os</th>
+      <th>Qmgr</th>
+      <th>Version mq</th>
+      <th>Broker</th>
+      <th>Version broker</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @iga_baselines.each do |iga_baseline| %>
+      <tr>
+        <td><%= iga_baseline.server_name %></td>
+        <td><%= iga_baseline.ip %></td>
+        <td><%= iga_baseline.os %></td>
+        <td><%= iga_baseline.version_os %></td>
+        <td><%= iga_baseline.qmgr %></td>
+        <td><%= iga_baseline.version_mq %></td>
+        <td><%= iga_baseline.broker %></td>
+        <td><%= iga_baseline.version_broker %></td>
+        <td><%= iga_baseline.comment %></td>
+        <td><%= link_to 'Show', iga_baseline %></td>
+        <td><%= link_to 'Edit', edit_iga_baseline_path(iga_baseline) %></td>
+        <td><%= link_to 'Destroy', iga_baseline, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Iga Baseline', new_iga_baseline_path %>

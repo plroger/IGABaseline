@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  server_name: MyString
+  ip: MyString
+  os: MyString
+  version_os: MyString
+  qmgr: MyString
+  version_mq: MyString
+  broker: MyString
+  version_broker: MyString
+  comment: MyText
+
+two:
+  server_name: MyString
+  ip: MyString
+  os: MyString
+  version_os: MyString
+  qmgr: MyString
+  version_mq: MyString
+  broker: MyString
+  version_broker: MyString
+  comment: MyText

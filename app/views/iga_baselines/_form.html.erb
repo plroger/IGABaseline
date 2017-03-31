@@ -1,0 +1,62 @@
+<%= form_for(iga_baseline) do |f| %>
+  <% if iga_baseline.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(iga_baseline.errors.count, "error") %> prohibited this iga_baseline from being saved:</h2>
+
+      <ul>
+      <% iga_baseline.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :server_name %>
+    <%= f.text_field :server_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ip %>
+    <%= f.text_field :ip %>
+  </div>
+
+  <div class="field">
+    <%= f.label :os %>
+    <%= f.text_field :os %>
+  </div>
+
+  <div class="field">
+    <%= f.label :version_os %>
+    <%= f.text_field :version_os %>
+  </div>
+
+  <div class="field">
+    <%= f.label :qmgr %>
+    <%= f.text_field :qmgr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :version_mq %>
+    <%= f.text_field :version_mq %>
+  </div>
+
+  <div class="field">
+    <%= f.label :broker %>
+    <%= f.text_field :broker %>
+  </div>
+
+  <div class="field">
+    <%= f.label :version_broker %>
+    <%= f.text_field :version_broker %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment %>
+    <%= f.text_area :comment %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

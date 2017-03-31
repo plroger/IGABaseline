@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Server name:</strong>
+  <%= @iga_baseline.server_name %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @iga_baseline.ip %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @iga_baseline.os %>
+</p>
+
+<p>
+  <strong>Version os:</strong>
+  <%= @iga_baseline.version_os %>
+</p>
+
+<p>
+  <strong>Qmgr:</strong>
+  <%= @iga_baseline.qmgr %>
+</p>
+
+<p>
+  <strong>Version mq:</strong>
+  <%= @iga_baseline.version_mq %>
+</p>
+
+<p>
+  <strong>Broker:</strong>
+  <%= @iga_baseline.broker %>
+</p>
+
+<p>
+  <strong>Version broker:</strong>
+  <%= @iga_baseline.version_broker %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @iga_baseline.comment %>
+</p>
+
+<%= link_to 'Edit', edit_iga_baseline_path(@iga_baseline) %> |
+<%= link_to 'Back', iga_baselines_path %>
