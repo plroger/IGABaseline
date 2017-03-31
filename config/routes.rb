@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  #get 'startup/index'
 
   resources :iga_baselines
   root 'iga_baselines#index'
